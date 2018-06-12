@@ -1,0 +1,30 @@
+{
+  "ver": "1.0.0",
+  "uuid": "ec52df08-4475-416f-9632-3d14b81bf4b3",
+  "type": "sprite",
+  "wrapMode": "clamp",
+  "filterMode": "bilinear",
+  "subMetas": {
+    "caldeirao01": {
+      "ver": "1.0.3",
+      "uuid": "df651044-cd4c-4235-94b8-97228e281bc6",
+      "rawTextureUuid": "ec52df08-4475-416f-9632-3d14b81bf4b3",
+      "trimType": "auto",
+      "trimThreshold": 1,
+      "rotated": false,
+      "offsetX": 0,
+      "offsetY": -7.5,
+      "trimX": 17,
+      "trimY": 28,
+      "width": 629,
+      "height": 609,
+      "rawWidth": 663,
+      "rawHeight": 650,
+      "borderTop": 0,
+      "borderBottom": 0,
+      "borderLeft": 0,
+      "borderRight": 0,
+      "subMetas": {}
+    }
+  }
+}

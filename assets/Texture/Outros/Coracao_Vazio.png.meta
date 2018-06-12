@@ -1,0 +1,30 @@
+{
+  "ver": "1.0.0",
+  "uuid": "2793ae53-06c2-4f5f-9982-bafbfb9de7ec",
+  "type": "sprite",
+  "wrapMode": "clamp",
+  "filterMode": "bilinear",
+  "subMetas": {
+    "Coracao_Vazio": {
+      "ver": "1.0.3",
+      "uuid": "edb3ca7e-17f8-4776-99ab-ce4277a2aa9e",
+      "rawTextureUuid": "2793ae53-06c2-4f5f-9982-bafbfb9de7ec",
+      "trimType": "auto",
+      "trimThreshold": 1,
+      "rotated": false,
+      "offsetX": 0,
+      "offsetY": -0.5,
+      "trimX": 2,
+      "trimY": 2,
+      "width": 265,
+      "height": 230,
+      "rawWidth": 269,
+      "rawHeight": 233,
+      "borderTop": 0,
+      "borderBottom": 0,
+      "borderLeft": 0,
+      "borderRight": 0,
+      "subMetas": {}
+    }
+  }
+}

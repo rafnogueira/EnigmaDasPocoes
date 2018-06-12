@@ -1,0 +1,124 @@
+{
+  "__type__": "cc.AnimationClip",
+  "_name": "smokeAnimation",
+  "_objFlags": 0,
+  "_rawFiles": null,
+  "_duration": 1.375,
+  "sample": 8,
+  "speed": 1,
+  "wrapMode": 1,
+  "curveData": {
+    "comps": {
+      "cc.Sprite": {
+        "spriteFrame": [
+          {
+            "frame": 0,
+            "value": {
+              "__uuid__": "0396bf8a-6ebe-4b83-b590-6b6f0bf43af9"
+            }
+          },
+          {
+            "frame": 0.125,
+            "value": {
+              "__uuid__": "c85798f9-0064-437b-820a-cf1dbf15d6f3"
+            }
+          },
+          {
+            "frame": 0.25,
+            "value": {
+              "__uuid__": "065f9045-61fb-447c-b3e3-d7351d1b5deb"
+            }
+          },
+          {
+            "frame": 0.375,
+            "value": {
+              "__uuid__": "a973ad09-967d-4317-8b65-1c3fd64e2b4a"
+            }
+          },
+          {
+            "frame": 0.5,
+            "value": {
+              "__uuid__": "85fcb73e-b79b-4ef6-98ea-dd8edc7778fd"
+            }
+          },
+          {
+            "frame": 0.625,
+            "value": {
+              "__uuid__": "0fce2815-525a-4fff-8e80-efa9e47f384a"
+            }
+          },
+          {
+            "frame": 0.75,
+            "value": {
+              "__uuid__": "2db988cc-7d19-4aee-b639-f922f376a16a"
+            }
+          },
+          {
+            "frame": 0.875,
+            "value": {
+              "__uuid__": "a91d6c37-ca15-42fd-b768-c10befe2d20a"
+            }
+          },
+          {
+            "frame": 1,
+            "value": {
+              "__uuid__": "e51dd617-156f-4879-993d-790b19554fa4"
+            }
+          },
+          {
+            "frame": 1.125,
+            "value": {
+              "__uuid__": "3c0b1c6d-71ca-42c1-8f46-a56ff56308e8"
+            }
+          },
+          {
+            "frame": 1.25,
+            "value": null
+          }
+        ]
+      }
+    }
+  },
+  "events": [
+    {
+      "frame": 0,
+      "func": "",
+      "params": []
+    },
+    {
+      "frame": 0,
+      "func": "",
+      "params": []
+    },
+    {
+      "frame": 0,
+      "func": "",
+      "params": []
+    },
+    {
+      "frame": 0,
+      "func": "",
+      "params": []
+    },
+    {
+      "frame": 0,
+      "func": "",
+      "params": []
+    },
+    {
+      "frame": 0,
+      "func": "",
+      "params": []
+    },
+    {
+      "frame": 0,
+      "func": "",
+      "params": []
+    },
+    {
+      "frame": 0,
+      "func": "",
+      "params": []
+    }
+  ]
+}

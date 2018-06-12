@@ -1,0 +1,30 @@
+{
+  "ver": "1.0.0",
+  "uuid": "0d77fee5-39c2-484b-aa6e-a00e94cf8ffd",
+  "type": "sprite",
+  "wrapMode": "clamp",
+  "filterMode": "bilinear",
+  "subMetas": {
+    "Coracao_Metade": {
+      "ver": "1.0.3",
+      "uuid": "4b7d9b71-7501-4819-a9e1-f6b17339bc5e",
+      "rawTextureUuid": "0d77fee5-39c2-484b-aa6e-a00e94cf8ffd",
+      "trimType": "auto",
+      "trimThreshold": 1,
+      "rotated": false,
+      "offsetX": -1,
+      "offsetY": 0.5,
+      "trimX": 0,
+      "trimY": 1,
+      "width": 263,
+      "height": 231,
+      "rawWidth": 265,
+      "rawHeight": 234,
+      "borderTop": 0,
+      "borderBottom": 0,
+      "borderLeft": 0,
+      "borderRight": 0,
+      "subMetas": {}
+    }
+  }
+}

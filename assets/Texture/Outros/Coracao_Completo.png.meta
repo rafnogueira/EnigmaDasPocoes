@@ -1,0 +1,30 @@
+{
+  "ver": "1.0.0",
+  "uuid": "a2b7e9c2-7431-47ed-94df-64267838f5cc",
+  "type": "sprite",
+  "wrapMode": "clamp",
+  "filterMode": "bilinear",
+  "subMetas": {
+    "Coracao_Completo": {
+      "ver": "1.0.3",
+      "uuid": "e5e669cf-e742-4b26-b947-f0bd3432e445",
+      "rawTextureUuid": "a2b7e9c2-7431-47ed-94df-64267838f5cc",
+      "trimType": "auto",
+      "trimThreshold": 1,
+      "rotated": false,
+      "offsetX": 0,
+      "offsetY": -1.5,
+      "trimX": 1,
+      "trimY": 3,
+      "width": 265,
+      "height": 230,
+      "rawWidth": 267,
+      "rawHeight": 233,
+      "borderTop": 0,
+      "borderBottom": 0,
+      "borderLeft": 0,
+      "borderRight": 0,
+      "subMetas": {}
+    }
+  }
+}
