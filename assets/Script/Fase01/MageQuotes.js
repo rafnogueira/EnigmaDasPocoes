@@ -57,9 +57,9 @@ cc.Class({
         var mensagensErro  = new Array();
         var mensagensAcerto = new Array();
 
-        msg = "Me ajuda a encontrar a poção que falta para completar a minha receita que está no caldeirão meu aprendiz!" ;
+        msg = "Me ajuda a encontrar a poção que falta para completar a minha receita que está no caldeirão meu aprendiz! Assim ajudaremos nosso rei a derrotar a Morgana!" ;
         mensagensComunsPrimeiraFase.push(msg);
-        msg = "Meu livro de receita não me diz qual a fração igrediente eu preciso achar para completar o caldeirão, me ajude! "
+        msg = "Meu livro de receita não me diz qual a fração igrediente eu preciso achar para completar o caldeirão, me ajude! Vamos ajudar nosso reino com estas poções. "
         mensagensComunsPrimeiraFase.push(msg);
         msg = "Não sei qual das poção é o igrediente final, não está no meu livro me ajude a descobrir qual destas poção completará  minha receita no caldeirão";
         mensagensComunsPrimeiraFase.push(msg);

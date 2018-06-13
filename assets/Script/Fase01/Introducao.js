@@ -73,11 +73,25 @@ cc.Class({
         cc.director.preloadScene("Scene/Menu");
         cc.director.preloadScene("Scene/Fase01");
 
+        
         this.btnCancel.node.on('touchstart', function (event) {
-            this.backToMenu();
+            
+            this.getComponent("SoundManager").playSoundClickBotao();
+
         }, this);
 
         this.btnOk.node.on('touchstart', function (event) {
+            
+            this.getComponent("SoundManager").playSoundClickBotao();
+
+        }, this);
+
+        
+        this.btnCancel.node.on('touchend', function (event) {
+            this.backToMenu();
+        }, this);
+
+        this.btnOk.node.on('touchend', function (event) {
             this.startGame();
         }, this);
 

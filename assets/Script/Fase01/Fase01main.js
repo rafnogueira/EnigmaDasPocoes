@@ -24,6 +24,8 @@ cc.Class({
           default: null,
           type: cc.Label
         },
+        //Tempo máximo para cada questão ,
+        tempoMax: 60,
         //Número gerado de forma aleatória para ser usado como questão
         perguntaGeradaDecimal: 0,
         //Resposta de forma decimal, número que falta para completar o caldeirão
@@ -36,7 +38,7 @@ cc.Class({
         //Segundos decorridos na fase
         segundos: 0,
         //Poderes para mudar as frações para uma mais fácil
-        respostaSegundos: 60,
+        respostaSegundos: 40,
         total: 4,
         questaoAtual: 0,
         respostaCorretas: 0,
@@ -44,13 +46,21 @@ cc.Class({
         gameIsOver: false,
         gameRunning: false,
         atualizandoPontos: true,
+        alreadyPlayedWinningSong: false,
         pontos: 0,
+        quoteSeconds: 0,
         //---------------------janelas dentro da fase
-
         helpWinFrame: {
           default: null,
           type: cc.Node
         },
+
+        btnOkWinFrame: 
+        {
+          default: null,
+          type: cc.Button
+        },
+
         gameIsOverFrame: {
           default: null,
           type: cc.Node
@@ -191,21 +201,66 @@ cc.Class({
 
     this.btnStopAudio.node.on('touchstart',  function(event){
       
+      this.getComponent("SoundManager").playSoundClickBotao();
+      
+
+    }, this) ;
+    
+    this.btnStopAudio.node.on('touchend',  function(event){
+      
       this.getComponent("SoundManager").stopAllSounds();
 
     }, this) ;
 
+
     this.btnQuit.node.on('touchstart', function(event)
     {
+      
+      this.getComponent("SoundManager").playSoundClickBotao();
+ 
+    }, this);    
+
+     this.btnQuit.node.on('touchend', function(event)
+    {
+      
+      this.getComponent("SoundManager").playSoundClickBotao();
       this.backToMenu();
     }, this); 
+
     this.btnShowHelp.node.on('touchstart', function(event)
     {
+      
+      this.getComponent("SoundManager").playSoundClickBotao();
+      
+    }, this);
+
+    this.btnShowHelp.node.on('touchend', function(event)
+    {
+      
       this.mostrarAjuda();
+    }, this);
+
+    this.btnOkWinFrame.node.on('touchstart', function(event)
+    {
+      this.getComponent("SoundManager").playSoundClickBotao();
+    }, this);
+
+    this.btnOkWinFrame.node.on('touchend', function(event)
+    {
+      this.helpWinFrame.active = false;
     }, this);
 
     this.btnGameIsOverFrameQuit.node.on('touchstart', function(event)
     {
+      
+      this.getComponent("SoundManager").playSoundClickBotao();
+      
+    }, this); 
+
+    this.btnGameIsOverFrameQuit.node.on('touchend', function(event)
+    {
+      
+      
       this.backToMenu();
     }, this); 
 
@@ -213,12 +268,18 @@ cc.Class({
     this.btnGameIsOverFrameReload.node.on('touchstart', function(event)
     {
       
+      this.getComponent("SoundManager").playSoundClickBotao();
+      
+    }, this); 
+
+    this.btnGameIsOverFrameReload.node.on('touchend', function(event)
+    {
+      
       cc.director.loadScene("Scene/Fase01");
       // this.gerarQuestao();
       // mostrarJanelaPontos();
 
     }, this); 
-
 
     this.node.on('mousemove', function(event)
     {
@@ -335,7 +396,7 @@ cc.Class({
   start : function() 
   {
 
-    this.respostaSegundos = 122220;
+    this.respostaSegundos = this.tempoMax;
     this.lblFalasMago.string = this.getComponent("MageQuotes").getSomeQuote();
 
     this.segundos =  this.respostaSegundos;
@@ -552,12 +613,14 @@ cc.Class({
       this.lblQuestao.string = this.questaoAtual;
 
       this.quoteSeconds += dt;
+      cc.log("tempo" + this.quoteSeconds);
       this.segundos -= dt;
       this.lblTimer.string = this.segundos.toFixed();
       
       cc.log("Pontos:"+this.pontos);
 
-      if (this.quoteSeconds > 6) {
+      //TODO mudar isso
+      if (this.quoteSeconds > 6){
 
         // console.log("Pegando uma citação" + this.getComponent("MageQuotes").getSomeQuote());
         // var quote = this.getComponent("MageQuotes").getSomeQuote();
@@ -722,6 +785,8 @@ cc.Class({
 
   adicionarRespostaErrada : function() 
   {
+    
+    this.getComponent("SoundManager").playSoundErrouPocao();
     this.respostaErradas ++;
     //this.lblFalasMago.string = "Não deu certo, temos que tentar novamente!";
     
@@ -733,7 +798,8 @@ cc.Class({
   },
   adicionarRespostaErradaTempo : function()
     {
-      
+    
+      this.getComponent("SoundManager").playSoundErrouPocao();
     this.respostaErradas ++;
     //this.lblFalasMago.string = "Não deu certo, temos que tentar novamente!";
     
@@ -741,11 +807,13 @@ cc.Class({
     this.questaoAtual ++;
 
     //this.resetGame();
-        this.gerarQuestao();
+    this.gerarQuestao();
     },
   
   adicionarRespostaCorreta : function() 
   {
+    
+    this.getComponent("SoundManager").playSoundAcertouPocao();
     this.respostaCorretas ++ ;
     //this.lblFalasMago.string = "Você Acertou a poção está completa! Vamos tentar continuar a fazer mais!"
     this.lblFalasMago.string = this.getComponent("MageQuotes").getCorrectQuestionQuote();
@@ -786,6 +854,16 @@ cc.Class({
       this.gameIsOverFrame.setPosition(0,0);
       this.gameIsOverFrame.active = true;
       
+
+      
+    if(!this.alreadyPlayedWinningSong) 
+    {
+      
+      this.getComponent("SoundManager").playSoundJanelaPontos();
+      this.alreadyPlayedWinningSong = true;
+
+    } 
+
       // this.gameIsOver = true;
 
   },

@@ -18,11 +18,21 @@ cc.Class({
             default : null,
             type: cc.Node
         },
-
+        btnSobreWinFrameOK: 
+        {
+            default: null,
+            type: cc.Button
+        },
         instrucoesWinFrame : 
         {
             default : null,
             type: cc.Node
+        },
+
+        btnInstrucoesWinFrameOk: 
+        {
+            default: null,
+            type: cc.Button
         },
 
         btnNovoJogo: {
@@ -91,6 +101,29 @@ cc.Class({
         //       cc.director.loadScene("Scene/Instrucoes");
         // });
 
+        this.btnInstrucoesWinFrameOk.node.on('touchstart',  function()
+        {
+            this.getComponent("SoundManager").playSoundClickBotao();   
+        }, this);
+        
+
+        this.btnInstrucoesWinFrameOk.node.on('touchend',  function()
+        {
+            this.instrucoesWinFrame.active = false;
+        }, this);
+        
+        this.btnSobreWinFrameOK.node.on('touchstart',  function()
+        {
+            this.getComponent("SoundManager").playSoundClickBotao();   
+        }, this);
+        
+
+        this.btnSobreWinFrameOK.node.on('touchend',  function()
+        {
+            this.sobreWinFrame.active = false;
+        }, this);
+        
+        //------------------------------------------------------------
         this.btnNovoJogo.node.on('touchend',  function()
         {
             this.iniciarJogo();
@@ -101,6 +134,7 @@ cc.Class({
         {
             this.mostrarInstrucoes();
         }, this);
+        
 
         this.btnSobre.node.on('touchend',  function()
         {
@@ -114,13 +148,53 @@ cc.Class({
 
         this.btnFacebook.node.on('touchend',  function()
         {
-
+            cc.sys.openURL("https://www.facebook.com/");
         }, this);
 
         this.btnTwitter.node.on('touchend',  function()
         {
+            cc.sys.openURL("https://twitter.com/");
+        }, this);
+
+        // Touchstart sounds
+        this.btnNovoJogo.node.on('touchstart',  function()
+        {
+            this.getComponent("SoundManager").playSoundClickBotao();
+            
+        }, this);
+
+        this.btnInstrucoes.node.on('touchstart',  function()
+        {
+            this.getComponent("SoundManager").playSoundClickBotao();
+            
+        }, this);
+        
+
+        this.btnSobre.node.on('touchstart',  function()
+        {
+            this.getComponent("SoundManager").playSoundClickBotao();
+            
+        }, this);
+
+        this.btnSair.node.on('touchstart',  function()
+        {
+            this.getComponent("SoundManager").playSoundClickBotao();
 
         }, this);
+
+        this.btnFacebook.node.on('touchstart',  function()
+        {
+            this.getComponent("SoundManager").playSoundClickBotao();
+
+        }, this);
+
+        this.btnTwitter.node.on('touchstart',  function()
+        {
+            this.getComponent("SoundManager").playSoundClickBotao();
+
+        }, this);
+
+
         
         this.node.on('mousemove', function(event)
         {

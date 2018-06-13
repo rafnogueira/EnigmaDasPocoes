@@ -28,13 +28,18 @@ cc.Class({
             default: null,
             url: cc.AudioClip
         },
+        soltouPocao: 
+        {
+            default: null,
+            url: cc.AudioClip
+        },
         arrastandoPocao: 
         {
             default: null,
             url: cc.AudioClip
         },
 
-        jogoAcabou: {
+        janelaPontos: {
             default: null,
             url: cc.AudioClip
         },
@@ -51,6 +56,19 @@ cc.Class({
     /*update(dt) {
     },*/
 
+
+    playSoundClickBotao: function () {
+
+        //this.test.play();
+        if(this.audioEnabled)
+        {
+        cc.audioEngine.playEffect(this.clickBotao, false);
+        }
+        //this.test.play();
+        //  cc.audioEngine.play(coletandoPocao, true);
+    },
+
+    
     playSoundColetandoPocao: function () {
 
         //this.test.play();
@@ -64,9 +82,24 @@ cc.Class({
 
     playSoundSoltandoPocao: function () {
         //this.test.play();
+        if(this.audioEnabled)
+        {
+        cc.audioEngine.playEffect(this.soltouPocao, false);
+        }
+        //this.test.play();
+        //  cc.audioEngine.play(coletandoPocao, true);
+    },
 
-        cc.audioEngine.playEffect(this.arrastandoPocao, false);
+    playSoundJanelaPontos : function() 
+    {
+        //this.test.play();
 
+        if(this.audioEnabled)
+        {
+            
+            cc.audioEngine.playEffect(this.janelaPontos, false);
+
+        }
         //this.test.play();
         //  cc.audioEngine.play(coletandoPocao, true);
     },
@@ -74,8 +107,10 @@ cc.Class({
     playSoundAcertouPocao: function () {
         //this.test.play();
 
-        cc.audioEngine.playEffect(this.arrastandoPocao, false);
-
+        if(this.audioEnabled)
+        {
+        cc.audioEngine.playEffect(this.acertouPocao, false);
+        }
         //this.test.play();
         //  cc.audioEngine.play(coletandoPocao, true);
     },
@@ -85,7 +120,7 @@ cc.Class({
 
         if(this.audioEnabled)
         {
-            cc.audioEngine.playEffect(this.arrastandoPocao, false);
+            cc.audioEngine.playEffect(this.errouPocao, false);
         }
 
         //this.test.play();
@@ -117,7 +152,7 @@ cc.Class({
 
         cc.audioEngine.stopAll();
         cc.audioEngine.playEffect(this.fase01, true);
-
+        
         //this.test.play();
         //  cc.audioEngine.play(coletandoPocao, true);
     },
