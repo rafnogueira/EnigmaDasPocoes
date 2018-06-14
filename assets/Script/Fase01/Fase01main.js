@@ -25,7 +25,7 @@ cc.Class({
           type: cc.Label
         },
         //Tempo máximo para cada questão ,
-        tempoMax: 60,
+        tempoMax: 40,
         //Número gerado de forma aleatória para ser usado como questão
         perguntaGeradaDecimal: 0,
         //Resposta de forma decimal, número que falta para completar o caldeirão
@@ -318,6 +318,9 @@ cc.Class({
     this.Pocao_A.node.on("touchend", function () {
       cc.director.getPhysicsManager().enabled = true;
       this.Pocao_A.node.opacity = 255;
+      
+      this.getComponent("SoundManager").playSoundSoltandoPocao();
+
     }, this);
 
     //Adiciona ações de cliques na Pocao_B
@@ -338,6 +341,9 @@ cc.Class({
     this.Pocao_B.node.on("touchend", function () {
       cc.director.getPhysicsManager().enabled = true;
       this.Pocao_B.node.opacity = 255;
+
+      
+      this.getComponent("SoundManager").playSoundSoltandoPocao();
     }, this);
 
 
@@ -359,6 +365,9 @@ cc.Class({
     this.Pocao_C.node.on("touchend", function () {
       cc.director.getPhysicsManager().enabled = true;
       this.Pocao_C.node.opacity = 255;
+
+      
+      this.getComponent("SoundManager").playSoundSoltandoPocao();
     }, this);
 
     //Adiciona ações de cliques na Pocao_D
@@ -379,6 +388,9 @@ cc.Class({
     this.Pocao_D.node.on("touchend", function () {
       cc.director.getPhysicsManager().enabled = true;
       this.Pocao_D.node.opacity = 255;
+
+      
+      this.getComponent("SoundManager").playSoundSoltandoPocao();
     }, this);
 
     //Script------------------------------------------------------------
@@ -613,14 +625,14 @@ cc.Class({
       this.lblQuestao.string = this.questaoAtual;
 
       this.quoteSeconds += dt;
-      cc.log("tempo" + this.quoteSeconds);
+      //cc.log("tempo" + this.quoteSeconds);
       this.segundos -= dt;
       this.lblTimer.string = this.segundos.toFixed();
       
       cc.log("Pontos:"+this.pontos);
 
       //TODO mudar isso
-      if (this.quoteSeconds > 6){
+      if (this.quoteSeconds > 8){
 
         // console.log("Pegando uma citação" + this.getComponent("MageQuotes").getSomeQuote());
         // var quote = this.getComponent("MageQuotes").getSomeQuote();

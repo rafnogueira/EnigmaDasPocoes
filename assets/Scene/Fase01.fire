@@ -5781,7 +5781,7 @@
     "_contentSize": {
       "__type__": "cc.Size",
       "width": 300,
-      "height": 144
+      "height": 154
     },
     "_rotationX": 0,
     "_rotationY": 0,
@@ -5807,12 +5807,14 @@
       "__id__": 147
     },
     "_enabled": true,
-    "_N$string": "Lembre-se para ajudar nosso amigo mago, você deve acertar a poção correta, pois o livro do nosso está incompleto em suas receitas. Alguns desafios incluirão soma de frações, multiplicações e até divisões. A resposta correta será sempre o caldeirão completo. Serão sempre 4 questões",
+    "_N$string": "Lembre-se para ajudar nosso amigo mago, você deve acertar a poção correta, pois o livro do nosso amigo está incompleto em suas receitas. Alguns desafios incluirão soma de frações, multiplicações e até divisões. A resposta correta será sempre o caldeirão completo.",
     "_N$horizontalAlign": 1,
-    "_N$fontSize": 16,
-    "_N$font": null,
+    "_N$fontSize": 20,
+    "_N$font": {
+      "__uuid__": "53232836-de89-48a9-baae-3b1db3506496"
+    },
     "_N$maxWidth": 300,
-    "_N$lineHeight": 18,
+    "_N$lineHeight": 22,
     "_N$imageAtlas": null,
     "_N$handleTouchEvent": true
   },
@@ -8906,6 +8908,7 @@
     "gameIsOver": false,
     "gameRunning": true,
     "atualizandoPontos": true,
+    "alreadyPlayedWinningSong": false,
     "pontos": 0,
     "quoteSeconds": 0,
     "helpWinFrame": {
@@ -9107,6 +9110,9 @@
     },
     "clickBotao": {
       "__uuid__": "88e57373-0a63-49de-aad9-b7b5cb20ba6b"
+    },
+    "soltouPocao": {
+      "__uuid__": "459c9ebc-79d8-4102-b81d-f5d0d40858c6"
     },
     "arrastandoPocao": {
       "__uuid__": "64961801-68e3-409d-a3ce-664205a3ae62"

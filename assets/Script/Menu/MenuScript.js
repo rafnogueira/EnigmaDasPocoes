@@ -95,7 +95,6 @@ cc.Class({
         // var gameResources = [
         //     "music_background01"
         // ];
-        cc.director.preloadScene("Scene/Introducao");
 
         // this.node.on('touchend', function () {
         //       cc.director.loadScene("Scene/Instrucoes");
@@ -143,7 +142,8 @@ cc.Class({
 
         this.btnSair.node.on('touchend',  function()
         {
-
+            cc.audioEngine.stopAll();
+            cc.game.end();
         }, this);
 
         this.btnFacebook.node.on('touchend',  function()
@@ -222,6 +222,8 @@ cc.Class({
 
     start() {
         // var audio_Engine =  cc.audioEngine;
+        
+        cc.director.preloadScene("Scene/Introducao");
     },
     
 

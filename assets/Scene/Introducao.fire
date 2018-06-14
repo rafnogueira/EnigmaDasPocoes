@@ -1035,11 +1035,33 @@
       "__id__": 2
     },
     "_enabled": true,
+    "menuMusic": {
+      "__uuid__": "43d557d7-3200-4ccc-8614-456dd0ca7a66"
+    },
     "introductionMusic": {
       "__uuid__": "6ccff790-fccc-43ce-bf73-85158dd23fc2"
     },
     "fase01": {
       "__uuid__": "49dca241-cd5d-4f71-ba6b-71f8d8dd19cc"
-    }
+    },
+    "acertouPocao": {
+      "__uuid__": "03f263a8-0f93-4030-80bb-d13fd9273508"
+    },
+    "errouPocao": {
+      "__uuid__": "ccc6df4f-7d00-4f73-8aa8-c0b6a18d6dda"
+    },
+    "clickBotao": {
+      "__uuid__": "88e57373-0a63-49de-aad9-b7b5cb20ba6b"
+    },
+    "soltouPocao": {
+      "__uuid__": "459c9ebc-79d8-4102-b81d-f5d0d40858c6"
+    },
+    "arrastandoPocao": {
+      "__uuid__": "64961801-68e3-409d-a3ce-664205a3ae62"
+    },
+    "janelaPontos": {
+      "__uuid__": "18f935ac-b339-41d4-abee-20cd18d41134"
+    },
+    "audioEnabled": true
   }
 ]

@@ -150,7 +150,9 @@ cc.Class({
     playSoundMusicaFase01: function () {
         //this.test.play();
 
+    
         cc.audioEngine.stopAll();
+
         cc.audioEngine.playEffect(this.fase01, true);
         
         //this.test.play();

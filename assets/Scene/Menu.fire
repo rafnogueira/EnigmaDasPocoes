@@ -365,8 +365,8 @@
     },
     "_contentSize": {
       "__type__": "cc.Size",
-      "width": 150,
-      "height": 40
+      "width": 120,
+      "height": 25
     },
     "_rotationX": 0,
     "_rotationY": 0,
@@ -590,8 +590,8 @@
     },
     "_contentSize": {
       "__type__": "cc.Size",
-      "width": 150,
-      "height": 40
+      "width": 120,
+      "height": 25
     },
     "_rotationX": 0,
     "_rotationY": 0,
@@ -600,7 +600,7 @@
     "_position": {
       "__type__": "cc.Vec2",
       "x": 0,
-      "y": 0
+      "y": 2.1
     },
     "_skewX": 0,
     "_skewY": 0,
@@ -815,8 +815,8 @@
     },
     "_contentSize": {
       "__type__": "cc.Size",
-      "width": 150,
-      "height": 40
+      "width": 100,
+      "height": 25
     },
     "_rotationX": 0,
     "_rotationY": 0,
@@ -1330,8 +1330,8 @@
     },
     "_contentSize": {
       "__type__": "cc.Size",
-      "width": 150,
-      "height": 40
+      "width": 100,
+      "height": 25
     },
     "_rotationX": 0,
     "_rotationY": 0,
@@ -1340,7 +1340,7 @@
     "_position": {
       "__type__": "cc.Vec2",
       "x": 0,
-      "y": 0
+      "y": 3.2
     },
     "_skewX": 0,
     "_skewY": 0,
@@ -2319,7 +2319,7 @@
     "_contentSize": {
       "__type__": "cc.Size",
       "width": 300,
-      "height": 126
+      "height": 154
     },
     "_rotationX": 0,
     "_rotationY": 0,
@@ -2328,7 +2328,7 @@
     "_position": {
       "__type__": "cc.Vec2",
       "x": -1,
-      "y": 46
+      "y": 39.8
     },
     "_skewX": 0,
     "_skewY": 0,
@@ -2345,14 +2345,14 @@
       "__id__": 51
     },
     "_enabled": true,
-    "_N$string": "Lembre-se para ajudar nosso amigo mago, você deve acertar a poção correta, pois o livro do nosso está incompleto em suas receitas. Alguns desafios incluirão soma de frações, multiplicações e até divisões. A resposta correta será sempre o caldeirão completo.",
+    "_N$string": "Lembre-se para ajudar nosso amigo mago, você deve acertar a poção correta, pois o livro do nosso amigo está incompleto em suas receitas. Alguns desafios incluirão soma de frações, multiplicações e até divisões. A resposta correta será sempre o caldeirão completo.",
     "_N$horizontalAlign": 1,
     "_N$fontSize": 20,
     "_N$font": {
       "__uuid__": "53232836-de89-48a9-baae-3b1db3506496"
     },
     "_N$maxWidth": 300,
-    "_N$lineHeight": 18,
+    "_N$lineHeight": 22,
     "_N$imageAtlas": null,
     "_N$handleTouchEvent": true
   },
@@ -2412,7 +2412,7 @@
     "_position": {
       "__type__": "cc.Vec2",
       "x": -86,
-      "y": -66.6
+      "y": -76.3
     },
     "_skewX": 0,
     "_skewY": 0,
@@ -2743,7 +2743,7 @@
     "_position": {
       "__type__": "cc.Vec2",
       "x": -37.9,
-      "y": -66.2
+      "y": -75.9
     },
     "_skewX": 0,
     "_skewY": 0,
@@ -2830,7 +2830,7 @@
     "_position": {
       "__type__": "cc.Vec2",
       "x": 11.2,
-      "y": -66.6
+      "y": -76.3
     },
     "_skewX": 0,
     "_skewY": 0,
@@ -3174,7 +3174,7 @@
     "_position": {
       "__type__": "cc.Vec2",
       "x": 103.5,
-      "y": -66.6
+      "y": -76.3
     },
     "_skewX": 0,
     "_skewY": 0,
@@ -3505,7 +3505,7 @@
     "_position": {
       "__type__": "cc.Vec2",
       "x": 57.4,
-      "y": -68
+      "y": -77.7
     },
     "_skewX": 0,
     "_skewY": 0,
